@@ -1,0 +1,68 @@
+.Font-Family-Custom-Class{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+ 
+.custom-hover-effect{
+    position: relative;
+    transition: color 0.1s ease; /* Smooth transition for text color */
+    
+  }
+  
+  .custom-hover-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease 0.3s; /* 2-second delay and smooth transition */
+  }
+  
+  .custom-hover-effect:hover {
+    color: #1D4ED8; /* Tailwind's blue-700 */
+  }
+  
+  .custom-hover-effect:hover::after {
+    width: 100%; /* Expands the border */
+  }
+  /* Set the scrollbar width */
+::-webkit-scrollbar {
+  width: 8px; /* Width for vertical scrollbar */
+  height: 8px; /* Height for horizontal scrollbar */
+}
+
+/* Style the track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #007bff; /* Blue color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #f4f4f4; /* Optional: Add padding effect */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Add a shadow for the thumb */
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the scrollbar corner (where vertical and horizontal scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background: #f4f4f4;
+}
+ .custom-fontfamily{
+  font-style: italic;
+ }
+ .FONT_FAMILT{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
