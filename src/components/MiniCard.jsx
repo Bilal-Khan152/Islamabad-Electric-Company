@@ -3,11 +3,14 @@ import React from "react";
 const MiniCard = () => {
   return (
     <>
-      <div className="flex  w-full flex-wrap  gap-6   2xl:mt-36 lg:mt-20 mt-0   justify-center">
- 
-          <div   className=" text-white   border-[1px] border-blue-900 rounded-xl 
+      <div className="flex  w-full flex-wrap  gap-6   2xl:mt-36 lg:mt-6 mt-0   justify-center">
+        <div
+          className="
+               border-[1px] rounded-xl border-blue-900 px-3 py-6 mt-11 mb-14
+      bg-blue-300    
+          text-white   
                hover:shadow-2xl hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out
-               md:max-w-xs m-5 shadow-lg bg-[#ecf0f1] "
+               md:max-w-xs m-5 shadow-lg hover:bg-[#ecf0f1] "
         >
           <div class="md:flex  flex-col items-center p-5">
             <img
@@ -22,11 +25,12 @@ const MiniCard = () => {
           </div>
         </div>
 
-
-
-        <div   className=" text-white   border-[1px] border-blue-900 rounded-xl 
+        <div
+          className="border-[1px] rounded-xl border-blue-900 px-3 py-6 mt-11 mb-14
+      bg-blue-300    
+          text-white   
                hover:shadow-2xl hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out
-               md:max-w-xs m-5 shadow-lg bg-[#ecf0f1] "
+               md:max-w-xs m-5 shadow-lg hover:bg-[#ecf0f1] "
         >
           <div class="md:flex  flex-col items-center p-5">
             <img
@@ -41,18 +45,16 @@ const MiniCard = () => {
           </div>
         </div>
 
-
-
-
         <div
-           className=" text-white   border-[1px] border-blue-900 rounded-xl 
-           hover:shadow-2xl hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out
-           md:max-w-xs m-5 shadow-lg bg-[#ecf0f1] "
+          className="border-[1px] rounded-xl border-blue-900 px-3 py-6 mt-11 mb-14
+      bg-blue-300    
+          text-white   
+               hover:shadow-2xl hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out
+               md:max-w-xs m-5 shadow-lg hover:bg-[#ecf0f1] "
         >
           <div class="md:flex flex-col justify-evenly items-center p-5">
             <img
-                className="rounded-md md:w-[150px]  2xl:w-[250px] 2xl:h-[230px]  md:h-[100px] w-[200px] h-[150px]"
-             
+              className="rounded-md md:w-[150px]  2xl:w-[250px] 2xl:h-[230px]  md:h-[100px] w-[200px] h-[150px]"
               src="https://media.istockphoto.com/id/1085122436/photo/young-plant-growing-in-garden-with-sunlight.jpg?s=612x612&w=0&k=20&c=huN8N8gYoN7bXBrPGOOzbMQGr9KPo8ikvfR1hv2sA-E="
               alt=""
             />
@@ -63,12 +65,12 @@ const MiniCard = () => {
           </div>
         </div>
 
-
-
         <div
-           className=" text-white   border-[1px] border-blue-900 rounded-xl 
-           hover:shadow-2xl hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out
-           md:max-w-xs m-5 shadow-lg bg-[#ecf0f1] "
+          className=" border-[1px] rounded-xl border-blue-900 px-3 py-6 mt-11 mb-14
+      bg-blue-300    
+          text-white   
+               hover:shadow-2xl hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out
+               md:max-w-xs m-5 shadow-lg hover:bg-[#ecf0f1] "
         >
           <div class="md:flex flex-col justify-evenly items-center p-5">
             <img
@@ -82,7 +84,6 @@ const MiniCard = () => {
             </p>
           </div>
         </div>
-
       </div>
     </>
   );

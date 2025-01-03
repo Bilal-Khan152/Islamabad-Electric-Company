@@ -4,9 +4,9 @@ const Policies = () => {
   return (
     <div className='  mt-8'>
        <div>
-          <p className="font-bold md:text-[16px] 2xl:text-3xl   text-blue-900 Font-Family-Custom-Class">Policies</p>
+          <p className="font-bold md:text-2xl custom-fontfamily 2xl:text-3xl   text-blue-900 Font-Family-Custom-Class">Policies</p>
         </div>
-      <div className='w-[100%] lg:px-3 px-1 mt-1 bg-[#ecf0f1] py-3  min-h-[82px] border-[1px] border-blue-900 rounded-md shadow-lg'>
+      <div className='w-[100%] lg:px-3 px-1 mt-5 bg-blue-300 py-3  min-h-[82px] border-[1px] border-blue-900 rounded-md shadow-lg'>
        
         <div>
           <ul className='list-disc list-inside '>

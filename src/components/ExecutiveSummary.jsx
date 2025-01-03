@@ -6,7 +6,9 @@ const ExecutiveSummary = () => {
       <div className="flex  items-center     ">
         <div className="md:w-[50%] w-full pt-6  h-full">
           <div className="">
-            <p className=" font-bold md:text-xl text-[16px] 2xl:text-3xl   text-blue-900 Font-Family-Custom-Class">
+            <p className=" font-bold md:text-3xl text-[16px] 2xl:text-3xl   text-blue-900
+             custom-fontfamily
+            Font-Family-Custom-Class">
               Executive Summary
             </p>
           </div>

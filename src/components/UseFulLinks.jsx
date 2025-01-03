@@ -4,9 +4,9 @@ const UseFulLinks = () => {
   return (
     <div className='   lg:w-[50%] w-full'>
        <div>
-        <p className="font-bold  md:text-xl text-[16px] 2xl:text-3xl text-blue-900 Font-Family-Custom-Class">USEFUL LINKS</p>
+        <p className="font-bold  md:text-2xl custom-fontfamily text-[16px] 2xl:text-3xl text-blue-900 Font-Family-Custom-Class">USEFUL LINKS</p>
       </div>
-    <div className='w-[100%] h-[60vh] mt-1 scrollable-content scrollbar-custom overflow-auto px-3 bg-[#ecf0f1]   border-[1px] border-blue-900 rounded-md shadow-lg'>
+    <div className='w-[100%] h-[60vh] mt-1 scrollable-content scrollbar-custom overflow-auto px-3 bg-blue-300   border-[1px] border-blue-900 rounded-md shadow-lg'>
      
       <div>
         <ul className='list-disc list-inside  mt-2'>

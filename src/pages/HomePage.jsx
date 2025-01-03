@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <>
-      <Navbar />
+       
       <MiniCard />
       <div className="flex flex-col w-full items-center justify-center">
         <div className=" w-[80%]     ">
@@ -46,7 +46,7 @@ const HomePage = () => {
           <BannersImges />
         </div>
       </div>
-      <Footer />
+     
     </>
   );
 };

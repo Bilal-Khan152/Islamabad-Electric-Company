@@ -7,12 +7,12 @@ const AvailbleJobsSection = () => {
   
           <div>
     
-        <p className='font-bold  md:text-[16px] 2xl:text-3xl text-blue-900 Font-Family-Custom-Class  '>Availble Jobs</p>  
+        <p className='font-bold  md:text-2xl custom-fontfamily 2xl:text-3xl text-blue-900 Font-Family-Custom-Class  '>Availble Jobs</p>  
 
           </div>
 
             <div className='mt-5'>
-        <table className='  w-full border-[1px] border-blue-900 shadow-lg  bg-[#ecf0f1]'>
+        <table className='  w-full border-[1px] border-blue-900 shadow-lg  bg-blue-300'>
         <thead>
             <tr className=''>
                 <th className='  border-[1px] border-blue-900 md:text-[17px] 2xl:text-2xl text-xs  md:px-4 px-2 md:py-2 py-1 Font-Family-Custom-Class'>Job Title</th>

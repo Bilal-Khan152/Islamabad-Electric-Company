@@ -6,7 +6,7 @@ const Authors = () => {
   
     
         {/* Author one */}
-      <div className="w-[90%] rounded bg-[#ecf0f1] mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
+      <div className="w-[90%] rounded bg-blue-300 mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
         {/* for author img and description    */}
         <div className="  ">
           <img
@@ -85,7 +85,7 @@ const Authors = () => {
 
       {/* Author two */}
 
-      <div className="w-[90%] rounded bg-[#ecf0f1] mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
+      <div className="w-[90%] rounded bg-blue-300 mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
         {/* for author img and description    */}
         <div className="  ">
           <img
@@ -114,7 +114,7 @@ He is an alumnus of Kings College London and Oxford Said Business School.
 
         {/* Author three */}
 
-        <div className="w-[90%] rounded bg-[#ecf0f1] mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
+        <div className="w-[90%] rounded bg-blue-300 mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
         {/* for author img and description    */}
         <div className="  ">
           <img
@@ -175,7 +175,7 @@ Previously, she managed the litigation department at Ahmer Bilal Soofi & Co., ov
         {/* Author four */}
 
 
-        <div className="w-[90%] rounded bg-[#ecf0f1] mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
+        <div className="w-[90%] rounded bg-blue-300 mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
         {/* for author img and description    */}
         <div className="  ">
           <img
@@ -243,7 +243,7 @@ Previously, she managed the litigation department at Ahmer Bilal Soofi & Co., ov
  
         {/* Author five  */}
 
-        <div className="w-[90%] rounded bg-[#ecf0f1] mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
+        <div className="w-[90%] rounded bg-blue-300 mb-6 py-3 mx-auto flex flex-col justify-center items-center ">
         {/* for author img and description    */}
         <div className="  ">
           <img

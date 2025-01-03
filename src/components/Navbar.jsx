@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,238 +7,62 @@ const Navbar = () => {
   return (
     <>
       {/* Top Navbar (Always Visible) */}
-    <div className="flex flex-row ">
-
-      <div className="flex md:flex-row flex-col  md:justify-between justify-evenly  items-center w-full  ">
-        <div className="flex items-center   ">
-          <img
-            className=" md:w-[130px] lg:w-[90px] lg:h-[90px] md:h-[130px] md:block hidden "
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBiOJo8fXzamsxCXsiefW9l4fTsCdwOLn--Q&s"
-            alt=""
-          />
-          <p className="font-bold md:text-[17px] mt-2 md:mt-0 text-sm 2xl:text-3xl text-blue-900">
+      <div className="flex flex-wrap shadow-lg sticky top-0 z-10 bg-blue-900 sm:justify-between  justify-center items-center w-full">
+        <div className="flex items-center p-4">
+          <p className="font-bold text-[#dfe6e9] text-lg md:text-xl custom-fontfamily 2xl:text-3xl">
             Islamabad Electric Supply Company
           </p>
         </div>
 
-        <div className="flex md:gap-4 gap-2 me-7 ">
-          <p className="  hover:text-[#1D4ED8] hidden lg:block lg:text-[15px] text-xs 2xl:text-2xl cursor-pointer font-semibold">
-            Webmail
+        <div className="hidden lg:flex gap-4 me-7">
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-[15px] cursor-pointer font-semibold">
+          <Link to="/">Home</Link>  
           </p>
-          <p className=" hover:text-[#1D4ED8] hidden lg:block lg:text-[15px] text-xs 2xl:text-2xl cursor-pointer font-semibold">
-            Press Releases
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-[15px] cursor-pointer font-semibold">
+             <Link to="/about">About Us</Link>
           </p>
-          <p className=" hover:text-[#1D4ED8] lg:text-[15px] hidden lg:block text-xs 2xl:text-2xl cursor-pointer font-semibold">
-            Jobs
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-[15px] cursor-pointer font-semibold">
+           <Link to="/contact"> Contact Us </Link>
           </p>
-          <p className=" hover:text-[#1D4ED8] lg:text-[15px] text-xs hidden lg:block 2xl:text-2xl cursor-pointer font-semibold">
-            FAQ
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-[15px] cursor-pointer font-semibold">
+            <Link to="/jobsSection"> Jobs </Link>
           </p>
-          <p className=" hover:text-[#1D4ED8] lg:text-[15px] text-xs 2xl:text-2xl hidden lg:block cursor-pointer font-semibold">
-            Contact Us
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-[15px] cursor-pointer font-semibold">
+            <Link to="/pressReleases"> Press Releases </Link>
           </p>
+        </div>
+
+        {/* Hamburger Button */}
+        <div className="lg:hidden flex items-center me-4">
+          <button
+            className="text-white text-xl"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? "\u2715" : "\u2630"}
+          </button>
         </div>
       </div>
 
-      {/* Hamburger Button for Navbar 2 */}
-      <div className="lg:hidden flex  justify-end px-4 py-2">
-        <button
-          className="text-xl   font-bold"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? "✕" : "☰"}
-        </button>
-      </div>
-
-      {/* Main Navbar (Responsive) */}
-      <div
-        className={`${
-          isOpen ? "flex " : "hidden "
-        } lg:flex flex-col lg:flex-row lg:items-center  absolute z-10 top-20 py-3 lg:justify-center bg-[#8395a7] w-full lg:h-[12vh] text-sm`}
-      >
-        <ul className="flex flex-col lg:flex-row lg:gap-6   lg:justify-center items-center w-full gap-2   ">
-          <li className="custom-hover-effect 2xl:text-3xl   cursor-pointer font-semibold">
-            Home
-          </li>
-          <li className="relative group">
-            <span className="custom-hover-effect cursor-pointer 2xl:text-3xl font-semibold">
-              About Us
-            </span>
-            <ul className="absolute z-10 text-sm left-0 hidden group-hover:block bg-white shadow-2xl rounded-lg mt-2 w-48">
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-                BOD Profile
-              </li>
-              <li className="px-1 py-1   hover:bg-gray-300 cursor-pointer">
-                ISCEO BOD
-              </li>
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-                What We Do
-              </li>
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-                The Ministry
-              </li>
-              <li className="px-1  py-1 hover:bg-gray-300 cursor-pointer">
-                Vission , Mission and Values
-              </li>
-              <li className="px-1  py-1  hover:bg-gray-300 cursor-pointer">
-              Legal Status
-              </li>
-              <li className="px-1  py-1 hover:bg-gray-300 cursor-pointer">
-              Organizational Structure
-              </li>
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-              Organizational Setup
-              </li>
-              <li className="px-1  py-1   hover:bg-gray-300 cursor-pointer">
-               Consumer Profile
-              </li>
-              <li className="px-1  py-1 hover:bg-gray-300 cursor-pointer">
-               Consumer Service Manual
-              </li>
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-               PEPCO
-              </li>
-            </ul>
-          </li>
-          <li className="relative group">
-            <span className="custom-hover-effect 2xl:text-3xl cursor-pointer font-semibold">
-              Projects
-            </span>
-            <ul className="absolute z-10 text-sm left-0 hidden group-hover:block bg-white shadow-2xl rounded-lg mt-2 w-48">
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-                Project Managment Unit
-              </li>
-              <li className="px-1 py-1   hover:bg-gray-300 cursor-pointer">
-                Secure Electricity Meter
-              </li>
-              <li className="px-1 py-1  hover:bg-gray-300 cursor-pointer">
-                Village Electrification Cell
-              </li>
-            
-            </ul>
-          </li>
-          <li className="relative group">
-            <span className="custom-hover-effect 2xl:text-3xl cursor-pointer font-semibold">
-              Customer Services
-            </span>
-            <ul className="absolute z-10 text-sm left-0 hidden group-hover:block bg-white shadow-2xl rounded-lg mt-2 w-48">
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Bill View/Print Duplicate Bill
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Old vs New Ref No
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Tarrif Guide
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-               Prcodure
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Customer Center
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Maintenance Schedule
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Test Report Contractor
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Daily Monthly Quarterly Data
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Load SHedding Managment
-              </li>
-               
-            </ul>
-          </li>
-          <li className="custom-hover-effect 2xl:text-3xl cursor-pointer font-semibold">
-            Public Notice
-          </li>
-          <li className="relative group">
-            <span className="custom-hover-effect 2xl:text-3xl cursor-pointer font-semibold">
-              Downloads
-            </span>
-            <ul className="absolute z-10 text-sm left-0 hidden group-hover:block bg-white shadow-2xl rounded-lg mt-2 w-48">
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Employee Download
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Customer Download
-              </li>
-            </ul>
-          </li>
-          <li className="relative group">
-            <span className="custom-hover-effect 2xl:text-3xl cursor-pointer font-semibold">
-              IESCO GIS
-            </span>
-            <ul className="absolute z-10 text-sm left-0 hidden group-hover:block bg-white shadow-2xl rounded-lg mt-2 w-48">
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                PDMS
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                EMS
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                GIS SOP
-              </li>
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                GIS Maps
-              </li>
-              
-            </ul>
-          </li>
-          <li className="relative group">
-            <span className="custom-hover-effect 2xl:text-3xl cursor-pointer font-semibold">
-              Departments
-            </span>
-            <ul className="absolute z-10 text-sm left-0 hidden group-hover:block bg-white shadow-2xl rounded-lg mt-2 w-48">
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Examination Cell
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                New MIS IESCO
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Email Address
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Search Ref No
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-               Newly Created Subdiv Ref No
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Consumer Profile 
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                ISECO Dashboard 
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Regional Center 
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Financial 
-              </li>
-              
-              <li className="px-1 py-1 hover:bg-gray-300 cursor-pointer">
-                Pension Cell 
-              </li>
-              
-              
-            </ul>
-          </li>
-        </ul>
-      </div>
-      </div>
+      {/* Collapsible Menu for Small Screens */}
+      {isOpen && (
+        <div className="flex flex-col bg-blue-900  absolute w-full items-center shadow-lg py-4">
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-lg cursor-pointer font-semibold px-4 py-2">
+          <Link to="/">Home</Link> 
+          </p>
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-lg cursor-pointer font-semibold px-4 py-2">
+          <Link to="/about">About Us</Link>
+          </p>
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-lg cursor-pointer font-semibold px-4 py-2">
+          <Link to="/contact"> Contact Us </Link>
+          </p>
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-lg cursor-pointer font-semibold px-4 py-2">
+          <Link to="/jobsSection"> Jobs </Link>
+          </p>
+          <p className="hover:text-gray-300 text-white text-sm md:text-base lg:text-lg cursor-pointer font-semibold px-4 py-2">
+          <Link to="/pressReleases"> Press Releases </Link>
+          </p>
+        </div>
+      )}
     </>
   );
 };

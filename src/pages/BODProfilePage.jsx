@@ -6,9 +6,9 @@ import  Footer from "../components/Footer" ;
 const BODProfilePage = () => {
   return ( 
     <>
-      <Navbar/>
+  
       <Authors/>
-       <Footer/>
+        
     </>
         
    )

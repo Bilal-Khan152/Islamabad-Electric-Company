@@ -5,7 +5,7 @@ const IESCOStrategicVision = () => {
     <div className='  mt-8 '>
            
     <div >
-    <p className="font-bold md:text-xl text-[16px] 2xl:text-3xl   text-blue-900 Font-Family-Custom-Class">IESCO Strategic Vision</p>
+    <p className="font-bold md:text-2xl custom-fontfamily text-[16px] 2xl:text-3xl   text-blue-900 Font-Family-Custom-Class">IESCO Strategic Vision</p>
    </div>
 
 
@@ -13,7 +13,7 @@ const IESCOStrategicVision = () => {
       <div className=' sm:block hidden mt-5 shadow-lg '>
         <img className='  w-full' src="https://iesco.com.pk/templates/iesco/images/iesco-edit_03.gif" alt="" />
       </div>
-      <div className= 'mt-5  rounded  w-[100%] flex flex-col justify-center items-center px-3 py-3   border-[1px] border-blue-900  bg-[#ecf0f1] shadow-lg   '>
+      <div className= 'mt-5  rounded  w-[100%] flex flex-col justify-center items-center px-3 py-3   border-[1px] border-blue-900  bg-blue-300 shadow-lg   '>
   
    <div className=''>
     <p className="font-bold text-[16px] 2xl:text-2xl  text-gray-700 Font-Family-Custom-Class"> Environment & Community Well being</p>
